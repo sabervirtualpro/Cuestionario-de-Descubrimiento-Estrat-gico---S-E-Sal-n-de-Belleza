@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Briefing - S&E Salón de Belleza</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #d4af37; /* Gold */
+            --bg-color: #f9f9f9;
+            --text-color: #333333;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            width: 100%;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn-submit:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ELITE BRANDING AGENCY</h1>
+        <p>Cuestionario de Descubrimiento Estratégico - S&E Salón de Belleza</p>
+    </header>
+
+    <div class="container">
+        <form action="#" method="POST">
+            
+            <h2 class="section-title">01. Esencia y Visión</h2>
+            <div class="form-group">
+                <label for="vision">Si S&E apareciera en la portada de una revista en 5 años, ¿cuál sería el titular?</label>
+                <input type="text" id="vision" name="vision" placeholder="Ej: El salón que revolucionó la belleza en Cataluña...">
+            </div>
+            <div class="form-group">
+                <label for="why">Más allá de ganar dinero, ¿por qué existe S&E Salón de Belleza?</label>
+                <textarea id="why" name="why" placeholder="Cuéntanos el propósito profundo de la marca..."></textarea>
+            </div>
+
+            <h2 class="section-title">02. Mercado y Competencia</h2>
+            <div class="form-group">
+                <label for="competitors">Nombra 3 competidores en Lleida/Cervera y dinos: ¿En qué son ellos peores que S&E?</label>
+                <textarea id="competitors" name="competitors" placeholder="Ej: Salón X tiene mal servicio al cliente, Salón Y no atiende niños..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="differentiator">Sabemos que ofreces "Garantía de 24h". ¿Hay algo más que absolutamente NADIE haga en tu ciudad?</label>
+                <textarea id="differentiator" name="differentiator" placeholder="Detalla tu ventaja injusta..."></textarea>
+            </div>
+
+            <h2 class="section-title">03. Universo Visual (Aspiracional)</h2>
+            <div class="form-group">
+                <label for="adjectives">Si S&E fuera una persona que entra a una habitación, elige 3 adjetivos que la describirían.</label>
+                <input type="text" id="adjectives" name="adjectives" placeholder="Ej: Elegante, cercana, vanguardista">
+            </div>
+            <div class="form-group">
+                <label for="brands">Menciona 2 marcas (de cualquier sector, no tiene que ser de belleza) cuyo diseño admires profundamente.</label>
+                <input type="text" id="brands" name="brands" placeholder="Ej: Apple, Zara, Aesop...">
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Descubrimiento</button>
+        </form>
+    </div>
+
+</body>
+</html>
